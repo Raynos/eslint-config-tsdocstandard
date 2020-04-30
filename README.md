@@ -1,21 +1,11 @@
-# eslint-config-semistandard
+# eslint-config-tsdocstandard
 
-[![npm][npm-image]][npm-url]
-[![travis][travis-image]][travis-url]
-
-[npm-image]: https://img.shields.io/npm/v/eslint-config-semistandard.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/eslint-config-semistandard
-[travis-image]: https://img.shields.io/travis/standard/eslint-config-semistandard.svg?style=flat-square
-[travis-url]: https://travis-ci.org/standard/eslint-config-semistandard
-
-eslint sharable config for semistandard
+eslint sharable config for tsdocstandard
 
 ## Install
 
 ```bash
-npm install --save-dev eslint-plugin-promise eslint-plugin-standard eslint-plugin-node eslint-plugin-import
-npm install --save-dev eslint-config-standard
-npm install --save-dev eslint-config-semistandard
+npm install -D eslint-config-tsdocstandard
 # note that eslint-plugin-promise, eslint-plugin-standard, eslint-plugin-node, eslint-plugin-import & eslint-config-standard are required peer dependencies
 ```
 
