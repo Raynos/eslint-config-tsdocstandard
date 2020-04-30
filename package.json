@@ -1,13 +1,12 @@
 {
   "name": "eslint-config-tsdocstandard",
   "description": "eslint sharable config for tsdocstandard",
-  "version": "16.0.0",
+  "version": "16.0.1",
   "author": "Raynos <raynos2@gmail.com>",
   "bugs": {
     "url": "https://github.com/Raynos/eslint-config-tsdocstandard/issues"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "homepage": "https://github.com/Raynos/eslint-config-tsdocstandard",
   "keywords": [
     "tsdocstandard",
@@ -49,6 +48,5 @@
     "type": "git",
     "url": "https://github.com/Raynos/eslint-config-tsdocstandard.git"
   },
-  "scripts": {
-  }
+  "scripts": {}
 }
