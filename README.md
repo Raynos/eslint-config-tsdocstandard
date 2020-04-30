@@ -2,6 +2,30 @@
 
 eslint sharable config for tsdocstandard
 
+## Status [Experimental]
+
+This repository contains the rules. For the `tsdocstandard`
+command go look at [`tsdocstandard`](https://github.com/Raynos/tsdocstandard)
+
+## Rules Motivation
+
+These rules were written to help convert vanilla JS to fully
+typed `.js` + `@jsdoc` with `TypeScript`.
+
+You will get a LOT of lint failures about missing type annotations.
+That's the whole point.
+
+If the linter passes you probably have 100% `type-coverage` which
+is awesome.
+
+I recommend using `// @ts-check` & `// @ts-nocheck` for partial
+migration from JS => "typed JS + jsdoc".
+
+## Feedback
+
+If you have bikeshedding suggestions about the rules please
+open an issue or PR.
+
 ## Install
 
 ```bash
