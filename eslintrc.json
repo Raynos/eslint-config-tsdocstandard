@@ -155,9 +155,9 @@
           "FunctionDeclaration": true,
           "FunctionExpression": true,
           "MethodDefinition": true,
-          "ClassExpression": true,
-          "ClassDeclaration": true
-          }
+          "ClassExpression": false,
+          "ClassDeclaration": false
+        }
       }
     ],
     "jsdoc/require-property": "error",
