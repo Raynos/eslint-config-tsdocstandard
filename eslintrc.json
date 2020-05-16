@@ -152,6 +152,7 @@
       "error",
       {
         "publicOnly": false,
+        "exemptEmptyFunctions": true,
         "require": {
           "FunctionDeclaration": true,
           "FunctionExpression": true,
