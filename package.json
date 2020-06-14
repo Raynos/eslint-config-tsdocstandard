@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-tsdocstandard",
   "description": "eslint sharable config for tsdocstandard",
-  "version": "16.2.1",
+  "version": "16.2.2",
   "author": "Raynos <raynos2@gmail.com>",
   "bugs": {
     "url": "https://github.com/Raynos/eslint-config-tsdocstandard/issues"
@@ -39,7 +39,9 @@
   "dependencies": {
     "@typescript-eslint/parser": "2.30.0"
   },
-  "bundledDependencies": ["@typescript-eslint/parser"],
+  "bundledDependencies": [
+    "@typescript-eslint/parser"
+  ],
   "peerDependencies": {
     "eslint": ">=6.0.1",
     "eslint-config-standard": "^14.0.0",
