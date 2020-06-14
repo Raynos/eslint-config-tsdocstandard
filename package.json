@@ -6,7 +6,6 @@
   "bugs": {
     "url": "https://github.com/Raynos/eslint-config-tsdocstandard/issues"
   },
-  "devDependencies": {},
   "homepage": "https://github.com/Raynos/eslint-config-tsdocstandard",
   "keywords": [
     "tsdocstandard",
@@ -36,7 +35,8 @@
   ],
   "license": "ISC",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@typescript-eslint/parser": "2.30.0"
   },
   "bundledDependencies": [
