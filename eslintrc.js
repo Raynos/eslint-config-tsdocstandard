@@ -110,7 +110,15 @@ module.exports = {
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-empty-interface': 'error',
     '@typescript-eslint/no-explicit-any': 'error',
-    '@typescript-eslint/no-extraneous-class': 'error',
+    '@typescript-eslint/no-extraneous-class': [
+      'error',
+      {
+        allowConstructorOnly: true,
+        allowEmpty: false,
+        allowStaticOnly: false,
+        allowWithDecorator: false
+      }
+    ],
     '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/no-for-in-array': 'error',
     '@typescript-eslint/no-implied-eval': 'error',
