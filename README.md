@@ -21,6 +21,17 @@ is awesome.
 I recommend using `// @ts-check` & `// @ts-nocheck` for partial
 migration from JS => "typed JS + jsdoc".
 
+## Comparison with eslint-config-standard-with-typescript
+
+There is another [eslint config that includes typescript](https://github.com/standard/eslint-config-standard-with-typescript)
+
+However, that config is meant for linting `*.ts` typescript files using standard
+and eslint. This set of config is specifically for linting `*.js` files
+that use `tsc --checkJs` and `@jsdoc` comments.
+
+The rules for typescript & javascript files are quite divergent and it's
+hard to have meaningful overlap.
+
 ## Feedback
 
 If you have bikeshedding suggestions about the rules please
