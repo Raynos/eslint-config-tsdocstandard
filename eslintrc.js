@@ -106,7 +106,12 @@ module.exports = {
         leadingUnderscore: 'allow'
       },
       {
-        selector: ['method', 'function'],
+        selector: 'method',
+        format: ['camelCase'],
+        leadingUnderscore: 'allow'
+      },
+      {
+        selector: 'function',
         format: ['camelCase'],
         leadingUnderscore: 'allow'
       },
