@@ -89,33 +89,37 @@ module.exports = {
     ],
     '@typescript-eslint/explicit-module-boundary-types': 'error',
     '@typescript-eslint/indent': 'off',
-    "@typescript-eslint/naming-convention": [
-      "error",
+    '@typescript-eslint/naming-convention': [
+      'error',
       {
-        "selector": "default",
-        "format": ["camelCase"]
+        selector: 'default',
+        format: ['camelCase', 'PascalCase']
       },
 
       {
-        "selector": "variable",
-        "format": ["camelCase", "UPPER_CASE"]
+        selector: 'variable',
+        format: ['camelCase', 'UPPER_CASE', 'PascalCase']
       },
       {
-        "selector": "parameter",
-        "format": ["camelCase"],
-        "leadingUnderscore": "allow"
+        selector: 'parameter',
+        format: ['camelCase'],
+        leadingUnderscore: 'allow'
+      },
+      {
+        selector: ['method', 'function'],
+        format: ['camelCase'],
+        leadingUnderscore: 'allow'
+      },
+      {
+        selector: 'memberLike',
+        modifiers: ['private'],
+        format: ['camelCase'],
+        leadingUnderscore: 'require'
       },
 
       {
-        "selector": "memberLike",
-        "modifiers": ["private"],
-        "format": ["camelCase"],
-        "leadingUnderscore": "require"
-      },
-
-      {
-        "selector": "typeLike",
-        "format": ["PascalCase"]
+        selector: 'typeLike',
+        format: ['PascalCase']
       }
     ],
     '@typescript-eslint/member-delimiter-style': [
