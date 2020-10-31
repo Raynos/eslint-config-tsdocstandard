@@ -23,8 +23,7 @@ module.exports = {
     'jsdoc-typescript',
     'import',
     'node',
-    'promise',
-    'standard'
+    'promise'
   ],
 
   overrides: [
@@ -53,7 +52,7 @@ module.exports = {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': 'error',
     '@typescript-eslint/await-thenable': 'error',
-    '@typescript-eslint/ban-ts-ignore': 'error',
+    '@typescript-eslint/ban-ts-comment': 'error',
     '@typescript-eslint/ban-types': [
       'error',
       {
@@ -79,7 +78,6 @@ module.exports = {
         }
       }
     ],
-    '@typescript-eslint/class-name-casing': 'error',
     '@typescript-eslint/consistent-type-assertions': 'error',
     '@typescript-eslint/consistent-type-definitions': 'error',
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -91,7 +89,35 @@ module.exports = {
     ],
     '@typescript-eslint/explicit-module-boundary-types': 'error',
     '@typescript-eslint/indent': 'off',
-    '@typescript-eslint/interface-name-prefix': 'error',
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "default",
+        "format": ["camelCase"]
+      },
+
+      {
+        "selector": "variable",
+        "format": ["camelCase", "UPPER_CASE"]
+      },
+      {
+        "selector": "parameter",
+        "format": ["camelCase"],
+        "leadingUnderscore": "allow"
+      },
+
+      {
+        "selector": "memberLike",
+        "modifiers": ["private"],
+        "format": ["camelCase"],
+        "leadingUnderscore": "require"
+      },
+
+      {
+        "selector": "typeLike",
+        "format": ["PascalCase"]
+      }
+    ],
     '@typescript-eslint/member-delimiter-style': [
       'error',
       {
@@ -134,11 +160,7 @@ module.exports = {
     '@typescript-eslint/no-this-alias': 'off',
     '@typescript-eslint/no-throw-literal': 'error',
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
-    '@typescript-eslint/no-unnecessary-condition': [
-      'error', {
-        ignoreRhs: true
-      }
-    ],
+    '@typescript-eslint/no-unnecessary-condition': 'error',
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
     '@typescript-eslint/no-unnecessary-type-arguments': 'error',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
