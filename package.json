@@ -37,7 +37,7 @@
   "main": "index.js",
   "devDependencies": {},
   "dependencies": {
-    "@typescript-eslint/parser": "4.6.0"
+    "@typescript-eslint/parser": "4.13.0"
   },
   "peerDependencies": {
     "eslint": ">=7.12.1",
