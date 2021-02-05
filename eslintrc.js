@@ -98,7 +98,10 @@ module.exports = {
         selector: 'default',
         format: ['camelCase', 'PascalCase']
       },
-
+      {
+        selector: 'objectLiteralProperty',
+        format: ['camelCase', 'UPPER_CASE', 'PascalCase']
+      },
       {
         selector: 'variable',
         format: ['camelCase', 'UPPER_CASE', 'PascalCase']
