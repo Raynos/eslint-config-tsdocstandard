@@ -49,6 +49,9 @@ module.exports = {
     'no-return-await': 'error',
     'no-async-promise-executor': 'error',
 
+    // annoying af in standard. just want SCREAMING_CASE for env vars.
+    'quote-props': ['error', 'consistent'],
+
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': 'error',
     '@typescript-eslint/await-thenable': 'error',
@@ -121,7 +124,6 @@ module.exports = {
         format: ['camelCase'],
         leadingUnderscore: 'require'
       },
-
       {
         selector: 'typeLike',
         format: ['PascalCase']
